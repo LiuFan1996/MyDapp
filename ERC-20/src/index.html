@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MT代币转账系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .mainWin{
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: 10px;
+            left: 320px;
+            border: 1px solid black;
+        }
+        .BalanceClass{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .approveBalanceClass{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .TansferClass{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .ApproveClass{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .transferFromClass{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <h1 class="text-center">MT代币交易系统</h1>
+            <div class="mainWin" >
+                <div class="BalanceClass">
+                    <span>当前账户地址：</span><input type="text" class="address" value="">
+                    <button class="selectValueBtn">查询余额</button><br>
+                    <span class="balanceSizeClass"></span>
+                </div>
+                <div class="TansferClass">
+                    <span>输入转账地址：</span>
+                    <input type="text" class="TansferaddressTo" value=""><br>
+                    <span>输入转账金额：</span>
+                    <input type="text" class="TansferValue" value=""><br>
+                    <button class="TansferBtn">转账</button>
+                </div>
+                <div class="approveBalanceClass">
+                        <span>输入授权账户地址：</span><input type="text" class="approveaddress" value="">
+                        <button class="approveselectValueBtn">查询授权余额</button><br>
+                        <span class="approvebalanceSizeClass"></span>
+                    </div>
+                <div class="ApproveClass">
+                        <span>授权用户地址：</span>
+                        <input type="text" class="approveAddress" value=""><br>
+                        <span>授权转账金额：</span>
+                         <input type="text" class="approveValue" value=""><br>
+                         <button class="approveBtn">转账</button>
+                </div>
+                <div class="transferFromClass">
+                        <span>权限用户地址：</span>
+                        <input type="text" class="transferFromFAddress" value=""><br>
+                        <span>转账用户地址：</span>
+                        <input type="text" class="transferFromToAddress" value=""><br>
+                        <span>授权转账金额：</span>
+                         <input type="text" class="transferFromValue" value=""><br>
+                         <button class="transferFromBtn">转账</button>
+                </div>
+            </div>
+        </div>
+        
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\web3.min.js"></script>
+    <script src="js\app.js"></script>
+    <script src="js\truffle-contract.js"></script>
+</body>
+</html>

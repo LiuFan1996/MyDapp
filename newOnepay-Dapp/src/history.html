@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <style>
+        tr,th{
+            text-align: center;
+        }
+        .navbar-header>p{
+           margin:0 auto;
+        }
+        .topic{
+            float: none;
+            position: absolute;
+            text-align: center;
+            left:0;
+            right: 0;
+            margin:0 auto;
+            color: white;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="./index.html" class="navbar-brand">OPG</a>
+            <p class="topic">Play</p>
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#content">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="content">
+            <ul class="nav navbar-nav">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./play.html">PLAY</a></li>
+                <li class="active"><a href="./history.html">历史</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<table class="table table-striped" >
+    <tbody id="OnetableId">
+
+    
+    <tr>
+        <th>期数</th>
+        <th>中奖人</th>
+        <th>金额</th>
+    </tr>
+</tbody>
+</table>
+</body>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js\bootstrap.min.js"></script>
+<script src="../js\web3.min.js"></script>
+<script src="../js\apphistory.js"></script>
+<script src="../js\truffle-contract.js"></script>
+<script>
+    $(".nav-tabs>li").click(function(){
+        $(this).siblings().removeClass("active");
+        $(this).addClass("active");
+    });
+</script>
+</html>
